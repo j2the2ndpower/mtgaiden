@@ -1,12 +1,13 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
-export default function Home({ formattedDate }) {
+export default function Home({ formattedDate }: any) {
   return (
     <>
       <h1>Static page</h1>
       <p>This page is static. It was built on {formattedDate}.</p>
       <p>
-        <a href="/ssr">View a server-side rendered page.</a>
+        <Link href="/ssr">View a server-side rendered page.</Link>
       </p>
     </>
   )

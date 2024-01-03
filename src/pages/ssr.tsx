@@ -1,4 +1,6 @@
-export default function SSR({ formattedDate }) {
+import Link from "next/link";
+
+export default function SSR({ formattedDate }: any) {
     return (
       <>
         <h1>Server-side rendered page</h1>
@@ -6,7 +8,7 @@ export default function SSR({ formattedDate }) {
           This page is server-side rendered. It was rendered on {formattedDate}.
         </p>
         <p>
-          <a href="/">View a static page.</a>
+          <Link href="/">View a static page.</Link>
         </p>
       </>
     );
