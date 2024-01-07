@@ -1,0 +1,15 @@
+.container {
+    @apply max-w-3xl mx-auto p-8 text-center;
+}
+
+header.home  {
+    @apply mb-8;
+}
+
+header.home h1 {
+    @apply text-3xl font-bold;    
+}
+
+header.home p {
+    @apply text-base text-gray-600;
+}
