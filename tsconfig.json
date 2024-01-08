@@ -21,7 +21,7 @@
     ],
     "paths": {
       "@/*": ["./app/*"],
-      "@components/*": ["components/*"],
+      "@components/*": ["./components/*"],
       "@interfaces": ["./shared/interfaces/"],
       "@graphql/*": ["./graphql/*"]
     }

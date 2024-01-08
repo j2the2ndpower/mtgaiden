@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@mui/material/Button";
 
 export default function Navbar() {  
     return (
@@ -9,9 +10,9 @@ export default function Navbar() {
                 <span className="flex_stretch"></span>
                 <nav id="nav">
                     <ul>
-                        <li className="current"><a href="index.html">Home</a></li>
+                        <li className="current"><a href="index.html"><Button variant="contained" color="secondary" fullWidth>Home</Button></a></li>
                         <li>
-                            <a href="#">Deck Builder</a>
+                            <a href="#"><Button color="primary" fullWidth>Deck Builder</Button></a>
                             <ul>
                                 <li><a href="#">Lorem ipsum dolor</a></li>
                                 <li><a href="#">Magna phasellus</a></li>
@@ -29,9 +30,9 @@ export default function Navbar() {
                                 <li><a href="#">Veroeros feugiat</a></li>
                             </ul>
                         </li>
-                        <li><a href="left-sidebar.html">Deck Tester</a></li>
-                        <li><a href="right-sidebar.html">Account</a></li>
-                        <li><a href="no-sidebar.html">Help</a></li>
+                        <li><a href="left-sidebar.html"><Button color="primary" fullWidth>Deck Tester</Button></a></li>
+                        <li><a href="right-sidebar.html"><Button color="primary" fullWidth>Account</Button></a></li>
+                        <li><a href="no-sidebar.html"><Button color="primary" fullWidth>Help</Button></a></li>
                     </ul>
                 </nav>
             </div>

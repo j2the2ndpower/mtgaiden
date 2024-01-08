@@ -425,8 +425,7 @@
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;
-		color: #fff !important;
+
 		font-weight: 700;
 		outline: 0;
 		font-size: 1.1em;
@@ -434,25 +433,6 @@
 		text-align: center;
 		@include vendor('transition', 'background-color .25s ease-in-out');
 
-		&:hover {
-			background: #e53359;
-		}
-
-		&:active {
-			background: #c51349;
-		}
-
-		&.alt {
-			background: #252122;
-
-			&:hover {
-				background: #353132;
-			}
-
-			&:active {
-				background: #151112;
-			}
-		}
 
 		&.icon {
 			&:before {
@@ -891,20 +871,6 @@
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					@include vendor('transition', 'background-color .25s ease-in-out');
 					outline: 0;
-				}
-
-				&:hover, &.active {
-					> a {
-						background: #f3f3f3;
-					}
-				}
-
-				&.current {
-					> a {
-						background: #d52349;
-						color: #fff !important;
-						font-weight: 700;
-					}
 				}
 			}
 		}
